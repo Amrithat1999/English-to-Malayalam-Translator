@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Translation Result</title>
+</head>
+<body>
+	<h1>Translation Result</h1>
+	{% if translated_text %}
+		<h2>Translated Text:</h2>
+		<p>{{ translated_text }}</p>
+		<h2>Original Text:</h2>
+		<p>{{ user_text }}</p>
+	{% endif %}
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Translate - Result</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align">Translation Result</h1>
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel teal lighten-2">
+                    <span class="white-text"><strong>Original Text:</strong> {{ user_text }}</span>
+                </div>
+                <div class="card-panel">
+                    <span><strong>Translated Text:</strong> {{ translated_text }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html> -->
+
+<!-- This is your 'result copy.html' file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Translate - Result</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align">Translation Result</h1>
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel teal lighten-2">
+                    <span class="white-text"><strong>Original Text:</strong> {{ user_text }}</span>
+                </div>
+              
+                <div class="card-panel">
+                    <span><strong>Translated Text:</strong></span>
+                    <div style="max-height: 400px; overflow-y: auto; margin-top: 10px;">
+                        {{ translated_text }}
+                    </div>
+                </div>
+                <!-- Add this line for the translate another button -->
+                <div class="center-align">
+                    <a href="/" class="btn waves-effect waves-light">Translate Another</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
+
+
