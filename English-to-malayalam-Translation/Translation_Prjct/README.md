@@ -66,6 +66,7 @@ source TranS/bin/activate
 
 ``` bash
 pip install flask transformers torch sentencepiece
+pip install -r requirements.txt
 ```
 
 ------------------------------------------------------------------------
@@ -73,7 +74,7 @@ pip install flask transformers torch sentencepiece
 ## ▶️ Run the Application
 
 ``` bash
-python k.py
+python mainapp.py
 ```
 
 Open browser:
